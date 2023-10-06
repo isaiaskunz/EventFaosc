@@ -55,14 +55,17 @@
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+           <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button> -->
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
+              <img src="img/siteeventoscoloquio.svg" alt="2º Colóquio Faosc" class="d-block" style="width:100%">
+            </div>
+           <!-- <div class="carousel-item active">
               <img src="img/banner1.jpeg" alt="3º semana academica" class="d-block" style="width:100%">
             </div>
 
@@ -84,7 +87,7 @@
             <div class="carousel-item">
               <img src="img/banner6.jpeg" alt="Programação evento" class="d-block" style="width:100%">
             </div>
-            
+            -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -119,7 +122,7 @@
 
 	<div class="col-md-4">
 		<div class="item">
-			<a  class="semana" href="#">Inscrever-se</a>
+			<a  class="semana" href="participante/cadastrar_no_evento.php">Inscrever-se</a>
 		</div>
 
 		<!--<div class="item">
