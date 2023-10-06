@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load("current", {packages:['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Density", { role: "style" } ],
+                ['0', 5, "yellow"],
+                ['1',  1000, "blue"],
+                ['2',  1170, "yellow"],
+                ['3',  660, "blue"],
+                ['4',  1030, "yellow"],
+                ['5',  600, "blue"],
+                ['6',  780, "yellow"],
+                ['7',  555, "blue"],
+                ['8',  456, "yellow"],
+                ['9',  500, "blue"],
+                ['10',  1030, "yellow"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1,
+                            { calc: "stringify",
+                                sourceColumn: 1,
+                                type: "string",
+                                role: "annotation" },
+                            2]);
+
+            var options = {
+                /**width: 600,
+                height: 400, */
+                bar: {groupWidth: "95%"},
+                legend: { position: "none" },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+        }
+     </script>
+
+    </head>
+    <body>
+    <!-- Identify where the chart should be drawn. -->
+    <div id="columnchart_values" style="width: 60%; height: 40%;"></div>
+    </body>
+      
+</html>
